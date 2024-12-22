@@ -1,17 +1,18 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.9.10-1.0.13"
+    id("org.jetbrains.kotlin.plugin.compose") version ("2.0.0")
+    id("com.google.devtools.ksp") version ("2.0.0-1.0.21")
 }
 
 android {
     namespace = "com.droidcon.composepreview"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.droidcon.composepreview"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
